@@ -1,0 +1,336 @@
+body {
+    background-color: black;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.nav__logo {
+    width: 100px;
+}
+
+// Top nav bar
+.topNav {
+    position: absolute;
+    width: 100%;
+    background: transparent;
+    z-index: 10;
+    select {
+        background: rgba(0, 0, 0, 0.823);
+        border: 1px solid #aaa;
+        color: #fff;
+        font-size: 0.875rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-right: 20px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+    .navbar_1 {
+        position: absolute;
+        right: 10%;
+        top: 20px;
+    }
+    .a_1 {
+        position: absolute;
+        left: 10%;
+        top: 20px;
+        .nav__logo {
+            width: 180px;
+        }
+    }
+    .btn_color {
+        background-color: #e80a0ae0;
+        color: white;
+        font-weight: bold;
+        &:hover {
+            background-color: #d40303e0;
+        }
+    }
+}
+
+// home banner
+.home-banner {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/ab180a27-b661-44d7-a6d9-940cb32f2f4a/7fb62e44-31fd-4e1f-b6ad-0b5c8c2a20ef/IN-en-20231009-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    .login_body {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+        text-align: center;
+        color: white;
+        h1 {
+            font-size: 55px;
+        }
+        h2 {
+            font-size: 25px;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+        h3 {
+            font-size: 25px;
+            margin-bottom: 25px;
+            font-weight: 400;
+            font-family: myfont;
+        }
+    }
+    .login_form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        input {
+            width: 400px;
+            height: 55px;
+            padding: 0 10px;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.321);
+            background-color: rgba(0, 0, 0, 0.515);
+            margin-right: 10px;
+            color: white;
+            &:focus {
+                border: 1px solid white;
+            }
+        }
+        button {
+            height: 55px;
+            border: none;
+            padding: 0px 25px;
+            background-color: #e80a0ae0;
+            color: white;
+            cursor: pointer;
+            font-size: 25px;
+            /* text-transform: uppercase; */
+            letter-spacing: 1px;
+            font-weight: 700;
+            outline: none;
+            border-radius: 5px;
+            transition: all linear 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover {
+                background-color: #d40303e0;
+            }
+            svg {
+                margin-left: 10px;
+                font-size: 35px;
+            }
+        }
+    }
+    .login-gradient {
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+        background-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.8) 0,
+            rgba(0, 0, 0, 0) 60%,
+            rgba(0, 0, 0, 0.8) 100%
+        );
+    }
+}
+// Login Page
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/ab180a27-b661-44d7-a6d9-940cb32f2f4a/7fb62e44-31fd-4e1f-b6ad-0b5c8c2a20ef/IN-en-20231009-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .login_card {
+        max-width: 500px;
+        padding: 75px;
+        background-color: rgba(0, 0, 0, 0.85);
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 999;
+        border-radius: 5px;
+        form {
+            display: grid;
+            flex-direction: column;
+            text-align: center;
+            width: 280px;
+            h1 {
+                color: rgba(255, 255, 255, 0.641);
+                margin-bottom: 30px;
+            }
+            input {
+                outline: none;
+                height: 45px;
+                border: 1px solid rgba(255, 255, 255, 0.401);
+                margin-bottom: 15px;
+                border-radius: 6px;
+                padding: 5px 15px;
+                background: rgba(141, 139, 139, 0.148);
+                color: white;
+                &:focus {
+                    border: 1px solid white;
+                }
+            }
+            button {
+                padding: 9px 20px;
+                border-radius: 6px;
+                border: none;
+                outline: none;
+                background-color: #e80a0ae0;
+                color: white;
+                font-size: 18px;
+                font-family: myfont;
+                transition: all linear 0.2s;
+                cursor: pointer;
+                margin-bottom: 15px;
+                &:hover {
+                    background-color: #d40303e0;
+                }
+            }
+            h4 {
+                color: gray;
+                font-size: 15px;
+                a {
+                    text-decoration: none;
+                }
+                span {
+                    color: white;
+                    cursor: pointer;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    .login-gradient {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+        background-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.8) 0,
+            rgba(0, 0, 0, 0) 60%,
+            rgba(0, 0, 0, 0.8) 100%
+        );
+    }
+}
+// Banner
+.banner {
+    background-image: url("https://image.tmdb.org/t/p/original//hVMoqvXs5j9ffun56tZ5YhliSD9.jpg");
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+    height: 448px;
+    object-fit: contain;
+    position: relative;
+
+    .banner__contents {
+        height: 190px;
+        margin-left: 30px;
+        padding-top: 140px;
+    }
+
+    .banner__title {
+        font-size: 3rem;
+        font-weight: 800;
+        padding-bottom: 0.3rem;
+    }
+
+    .banner__description {
+        font-size: 16px;
+        height: 80px;
+        line-height: 1.3;
+        line-height: 24px;
+        max-width: 360px;
+        padding-top: 1rem;
+        width: 45rem;
+    }
+
+    .banner__button {
+        border: none;
+        border-radius: 0.2vw;
+        cursor: pointer;
+        font-weight: 700;
+        margin-right: 1rem;
+        outline: none;
+        padding: 0.5rem 2rem;
+    }
+
+    .banner__button:hover {
+        background-color: #e6e6e6;
+        color: #000;
+        transition: all 0.2s;
+    }
+
+    .banner--fadeBottom {
+        background-image: linear-gradient(
+            180deg,
+            transparent,
+            rgba(37, 37, 37, 0.61),
+            #111
+        );
+        height: 8.4rem;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+// List
+
+.list {
+    width: 100vw;
+    overflow: hidden;
+    > .row {
+        flex-direction: column;
+        margin: 0;
+    }
+    .title {
+        margin: 30px;
+        margin-bottom: 0;
+    }
+    .row__posters {
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 20px 0 20px 0;
+        // flex-direction: column;
+        //
+    }
+
+    .row__posters::-webkit-scrollbar {
+        display: none;
+    }
+
+    .row__poster {
+        margin-right: 10px;
+        max-height: 100px;
+        object-fit: contain;
+        opacity: 0.8;
+        transition: transform 0.45s;
+        width: 20%;
+    }
+
+    .row__poster:hover {
+        cursor: pointer;
+        opacity: 1;
+        transform: scale(1.08);
+    }
+
+    .row__posterLarge {
+        max-height: 250px;
+    }
+
+    .row__posterLarge:hover {
+        opacity: 1;
+        transform: scale(1.09);
+    }
+}

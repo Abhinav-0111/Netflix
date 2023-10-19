@@ -1,25 +1,87 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./component/Header";
+import Homebanner from "./component/Homebanner";
+import Banner from "./component/Banner";
+import List from "./component/List";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Login from "./component/Login";
+import Logout from "./component/Logout";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <BrowserRouter>
+                <Routes>
+                    <Route
+                        path="/Netflix"
+                        element={
+                            <>
+                                <Header text="Sign In" />
+                                <Homebanner />
+                            </>
+                        }
+                    />
+                    <Route
+                        path="/login"
+                        element={
+                            <>
+                                <Header
+                                    text="Sign Up"
+                                    value={true}
+                                />
+                                <Login />
+                            </>
+                        }
+                    />
+                    <Route
+                        path="/register"
+                        element={
+                            <>
+                                <Header
+                                    text="Sign In"
+                                    value={false}
+                                />
+                                <Login />
+                            </>
+                        }
+                    />
+                    <Route
+                        path="/dashboard"
+                        element={
+                            <>
+                                <Logout />
+                                <Banner />
+                                <List
+                                    title="Netflix Originals"
+                                    param="originals"
+                                />
+                                <List
+                                    title="Trending Now"
+                                    param="trending"
+                                />
+                                <List
+                                    title="Now Playing"
+                                    param="now_playing"
+                                />
+                                <List
+                                    title="popular"
+                                    param="popular"
+                                />
+                                <List
+                                    title="Top Rated"
+                                    param="top_rated"
+                                />
+                                <List
+                                    title="Upcoming"
+                                    param="upcoming"
+                                />
+                            </>
+                        }
+                    />
+                </Routes>
+            </BrowserRouter>
+        </>
+    );
 }
 
 export default App;
