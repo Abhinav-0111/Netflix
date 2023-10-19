@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/https//Abhinav-0111.github.io/Netflix/static/css/main.e36fdb87.css",
+    "main.js": "/https//Abhinav-0111.github.io/Netflix/static/js/main.e50a7abe.js",
+    "static/media/netflix.png": "/https//Abhinav-0111.github.io/Netflix/static/media/netflix.296782f15214f6730b85.png",
+    "index.html": "/https//Abhinav-0111.github.io/Netflix/index.html",
+    "main.e36fdb87.css.map": "/https//Abhinav-0111.github.io/Netflix/static/css/main.e36fdb87.css.map",
+    "main.e50a7abe.js.map": "/https//Abhinav-0111.github.io/Netflix/static/js/main.e50a7abe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e36fdb87.css",
+    "static/js/main.e50a7abe.js"
+  ]
+}
