@@ -15,7 +15,7 @@ function Homebanner() {
                     <h1>Laughter. Tears. Thrills. Find it all on Netflix.</h1>
                     <h2>
                         Endless entertainment starts at just ₹ 149. Cancel
-                        anytime.
+                        anytime dfdf.
                     </h2>
                     <h3>
                         Ready to watch? Enter your email to create or restart
