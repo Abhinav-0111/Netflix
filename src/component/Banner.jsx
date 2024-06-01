@@ -13,7 +13,7 @@ function Banner() {
                     <h1 className="banner__description">
                         Angsty and awkward fifteen year old Ginny Miller often
                         feels more mature than her thirty year old mother, the
-                        irresistible and dynamic Georgia Miller...
+                        irresistible and dynamic Georgia Miller... Abhinav
                     </h1>
                 </div>
                 <div className="banner--fadeBottom"></div>
